@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+  }
+  
+  body {
+    background-color:#fff;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  
+    padding-left: 15px;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  i {
+    padding-left: 15px;
+  }
+  
+  
+  .user {
+    height: 30px;
+    border-radius: 50%;
+    padding: 0 10px 0 15px;
+  }
+  
+  .navbarTop {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .nav-left{
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right{
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbarBottom {
+    
+    border-bottom: 1px lightgrey solid;
+  
+  }
+  
+  #google {
+    width: 100px;
+    padding-right: 40px;
+  }
+  
+  .searchbar {
+    padding: 5px 8px 0px 14px;
+    width: 650px;
+    height: 44px;
+    margin: 20 0 0 0;
+    border-radius: 23px;
+    border: 1px solid #dfe1e5;
+    background-color:#fff;
+    
+  }
+  
+  .searchbar:hover{
+    box-shadow: 0px 5px 5px grey;
+  }
+  
+  /*navbar buttons */
+  button {
+      
+      border: none; /* Remove borders */
+      padding: 0px 0px; /* Some padding */
+      font-size: 12px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+      box-sizing: border-box; /* <- added this */
+      display: inline-block;
+      line-height: 50px;
+      text-align: center;
+      align-items: center;
+  }
+  
+  #all{
+    border-bottom: 3px blue solid;
+    margin-left: 150px;
+  }
+  button:hover{
+    color: blue;
+  
+  }
+  
+  #settings {
+    margin-left: 70px;
+  }
+  
+  #tool {
+    margin-left: 20px;
+  
+  }
+  /* FIX IT 
+  #tool:hover {
+    border: 1px gray solid;
+    background-image: linear-gradient(to bottom, #e4e4e4, #f7f7f7);
+    border: 1px solid #afafaf;
+    width: 50px;
+    height: 30px;
+  }
+  */
+  
+  /* Buttons images */
+  .material-icons{
+    position: relative;
+    top: 8px;
+    padding-right: 5px;
+    /*border: 1px black solid;*/
+  }
+  
+  /* MAIN */
+  
+  #results{
+    margin: 10px 0px 0px 150px;
+  }
+  
+  .snippet {
+    border: 1px lightgrey solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 650px;
+    margin: 20px 0 0 150px;
+  
+    display: grid;
+    grid-template-columns: 1fr 10px;
+    grid-template-rows: 50px 5fr 1fr 1fr 1fr;
+    font-family: arial, sans-serif;
+  }
+  
+  #title{
+    grid-row-start: 1;
+    padding: 10px 0 10px 20px;
+    font-size: 16px; 
+    font-family: arial, sans-serif;
+    line-height: 1.375;
+  }
+  .snippet ol {
+    margin-left: 40px; 
+    grid-row: 2 / 3;
+  
+  
+    
+  }
+  
+  .snippet li{
+    font-size: 16px; 
+    font-family: arial, sans-serif;
+    line-height: 1.375;
+  }
+  
+  .snippet img {
+    grid-column-start: 2;
+    justify-self: right;
+    width: 150px;
+    z-index: 5;
+  
+  
+  }
+  #snippet-date{
+    grid-row-start: 3;
+    margin-top: 10px; 
+    margin-left: 40px;
+    color: gray; 
+    font-size: 12px;
+  }
+  
+  .snippet a{
+    grid-row-start: 4;
+    grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-left: 10px;
+    color: #1a0dab;
+  
+  }
+  
+  #snippet-link {
+    grid-row-start: 5;
+    margin-left: 25px; 
+    color: green;
+  }
+  
+  
+  /* Searches */
+  
+  .search {
+    width: 800px;
+  }
+  
+  .search a {
+    font-size: 20px;
+    color: #1a0dab;
+    margin-left: 160px;
+    line-height: 1.3;
+    margin-top: 20px;
+  }
+  
+  .link {
+    margin-left: 175px; 
+    color: green;
+    padding-top: 5px;
+  
+  
+  }
+  
+  .search p {
+    margin-left: 175px;
+    line-height: 1.5;
+  }
+  
+  /*people also ask table 
+  
+  
+                  <h1 id="title">People also ask</h1>
+                  <ul>
+                      <li>How can i create my own webpage?</li>
+                      <li>How do you create a website for free?</li>
+                      <li>How can i create a website using HTML?</li>
+                      <li>How do I start a website from scratch?</li>
+                  </ul>
+  
+  */
+  table {  
+    margin: 20px 0 0 150px;
+  
+    border: 1px lightgrey solid;
+    border-radius: 10px;
+   
+  }
+  table th {
+    padding: 9px 16px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: start;
+  
+  }
+  
+  table td {
+    padding: 10px;
+    border-top: 1px lightgray solid;
+  }
+  
+  
+  
+  /* Related search */
+  
+  .relatedSearch {
+    border: 1px lightgrey solid;
+    border-radius: 10px;
+    width: 650px;
+    margin: 20px 0 0 150px;
+  
+    display: grid;
+    grid-template-rows: 20px 30px 120px;
+    grid-template-columns: repeat(10, 1fr);
+    font-family: arial, sans-serif;
+  }
+  
+  #relatedP {
+    grid-row: 1 / span 1;
+    font-size: 12px;
+    color: gray;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  
+  #relatedTitle {
+    grid-row: 2 / span 1;
+    grid-column: 1 / 5;
+    font-size: 20px;
+    padding-left: 8px;
+    font-weight: normal;
+  
+    width: 300px;
+  
+  }
+  
+  .related1{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 0;
+   
+      
+  }
+  .related2{
+    grid-row: 3 / span 1;
+    grid-column: 2 / 3;
+    width: 100px;
+    padding-left: 10px;
+  
+  }
+  .related3{
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+    width: 100px;
+    padding-left: 10px;
+  }
+  .related4{
+    grid-row: 3 / span 1;
+    grid-column: 4 / span 1;
+    width: 100px;
+    padding-left: 10px;
+  
+  }
+  .related5{
+    grid-row: 3 / span 1;
+    grid-column: 5 / span 1;
+    width: 100px;
+    padding-left: 10px;
+  
+  }
+  
+  
+  
+  
+  
+  /* footer here */
+  
+  .footer{
+  
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .top {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    background-color:#f2f2f2;
+  }
+  .top p {
+    
+    font-size: 15px;
+    padding-left: 25px;
+    
+  }
+  
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color:#f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    
+  }
+  
+  .foot-left{
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .foot-right{
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer a {
+    background-color:#f2f2f2;
+  }
+  .footer p {
+    background-color:#f2f2f2;
+  }
